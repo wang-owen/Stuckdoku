@@ -41,13 +41,14 @@ def iscorrect(board, row, col, num):
 
     return True
 
+def return_board(board):
+    return board
 
 sudoku_board = [
     #array of arrays
 ]
 
 if solver(sudoku_board):
-    #returning the sodoku, have to figure that 
-    print("Test")
+    return_board(sudoku_board)
 else:
     print("No solution exists.")
