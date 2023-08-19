@@ -1,0 +1,22 @@
+.my-element{
+    background-color: lightblue;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: larger;
+}
+
+.container{
+    overflow: auto;
+}
+
+.left-div{
+    float: left;
+    width: 50%;
+    background-color: lightblue;
+}
+
+.right-div{
+    float: right;
+    width: 50%;
+    background-color: lightblue;
+}
