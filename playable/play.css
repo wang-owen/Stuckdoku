@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tile {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    font-size: 15px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sudoku_board {
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
