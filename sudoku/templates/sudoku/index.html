@@ -9,18 +9,20 @@
     <h1><em>Stuckdoku</em></h1>
     <div id="button-container">
       <div class="container">
-        <div class="button">
-          <h2>Play</h2>
-          <a href="{% url 'sudoku' %}"
-            ><img src="{% static 'assets/new.png' %}"
-          /></a>
-          <p>New</p>
-        </div>
-        <div class="button">
-          <a href="{% url 'sudoku' %}"
-            ><img src="{% static 'assets/stuck.png' %}"
-          /></a>
-          <p>Upload</p>
+        <h2>Play</h2>
+        <div class="button" style="display:flex">
+          <div style="padding: 10px">
+            <a href="{% url 'sudoku' %}"
+              ><img src="{% static 'assets/new.png' %}"
+            /></a>
+            <p>New</p>
+          </div>
+          <div style="padding:5px">
+              <a href="{% url 'sudoku' %}"
+              ><img src="{% static 'assets/stuck.png' %}"
+            /></a>
+            <p>Upload</p>
+          </div>
         </div>
       </div>
       <div class="container">
