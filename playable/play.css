@@ -1,25 +1,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    background-color: rgb(181, 199, 213);
+
 }
 
 .tile {
     height: 48px;
     width: 48px;
-    border: 1px solid gray;
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.number {
-    height: 48px;
-    width: 48px;
     border: 1px solid black;
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
