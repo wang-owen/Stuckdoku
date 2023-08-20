@@ -4,9 +4,9 @@ body {
 }
 
 .tile {
-    height: 40px;
-    width: 40px;
-    border: 1px solid black;
+    height: 48px;
+    width: 48px;
+    border: 1px solid gray;
     font-size: 15px;
     font-weight: bold;
     display: flex;
@@ -15,9 +15,9 @@ body {
 }
 
 .number {
-    height: 40px;
-    width: 40px;
-    border: 1px solid gray;
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
     font-size: 15px;
     font-weight: bolder;
     display: flex;
@@ -26,9 +26,9 @@ body {
 }
 
 #sudoku_board {
-    height: 400px;
-    width: 400px;
-    background-color: gray;
+    height: 450px;
+    width: 450px;
+    background-color: lightgray;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
