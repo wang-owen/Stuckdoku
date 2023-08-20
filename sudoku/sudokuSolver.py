@@ -46,15 +46,3 @@ def iscorrect(board, row, col, num):
                 return False
 
     return True
-
-
-def return_board(board):
-    return json.dumps(board)
-
-
-sudoku_board = []
-
-if solver(sudoku_board):
-    return_board(sudoku_board)
-else:
-    print("No solution exists.")
