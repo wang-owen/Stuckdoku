@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'sudoku/sudoku.css' %}" />
+    <script src="{% static 'sudoku/sudoku.js' %}">
+      const Board = JSON.parse({{ solvedBoard|safe }})
+    </script>
+    <title>Playble Sodoku</title>
+  </head>
+  <body>
+    <h1>Playble Sudoku</h1>
+    <hr />
+
+    <form action="{% url 'index' %}">
+      <input type="submit" value="Home" />
+    </form>
+
+    <div id="sudoku_board"></div>
+    <br />
+    <div id="digits"></div>
+  </body>
+</html>
