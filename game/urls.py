@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("sudoku", views.sudoku, name="sudoku"),
+    path("sudoku/solve", views.solve, name="solve"),
+    path("sudoku/", views.sudoku, name="sudoku"),
     path("stuck", views.stuck, name="stuck"),
 ]
