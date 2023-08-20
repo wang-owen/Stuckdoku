@@ -18,11 +18,13 @@
             <p>New</p>
           </div>
           <div style="padding:5px">
-              <label for ="photoInput" style="cursor:pointer;">
-                <img id="photoPreview" src="{% static 'assets/stuck.png' %}" alt="Selected Photo;">
+            <form action="process.py" method="post" enctype="multipart/form-data">
+              <label for ="imageInput">
+                <img src="{% static 'assets/stuck.png' %}" alt="Upload Image" style="cursor:pointer;">
               </label>
-              <input type="file" accept="image/*" capture="camera" id="photoInput" style="display:none;">
-              <script scr="script.js"></script>
+              <input type="file" name="image" id="imageInput" accept="image/*" style="display:none;">
+              <button type="submit" style="display:none">Process Image</button>
+            </form>
             <p>Upload</p>
           </div>
         </div>
@@ -30,11 +32,13 @@
       <div class="container">
         <div class="button">
           <h2>Stuck</h2>
-          <label for ="photoInput" style="cursor:pointer;">
-            <img id="photoPreview" src="{% static 'assets/stuck.png' %}" alt="Selected Photo;">
-          </label>
-          <input type="file" accept="image/*" capture="camera" id="photoInput" style="display:none;">
-          <script scr="script.js"></script>
+          <form action="process.py" method="post" enctype="multipart/form-data">
+            <label for ="imageInput">
+              <img src="{% static 'assets/stuck.png' %}" alt="Upload Image" style="cursor:pointer;">
+            </label>
+            <input type="file" name="image" id="imageInput" accept="image/*" style="display:none;">
+            <button type="submit" style="display:none">Process Image</button>
+          </form>
           <p>Upload</p>
         </div>
       </div>
