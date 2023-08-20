@@ -7,6 +7,7 @@ window.onload = () => {
     addKeyboardListeners();
 };
 
+//test commit
 
 const board_values = []; 
 
