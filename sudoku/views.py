@@ -4,11 +4,14 @@ from django import forms
 
 # Create your views here.
 
+
 def index(request):
-    return render(request, 'sudoku/index.html')
+    return render(request, "sudoku/index.html")
+
 
 def sudoku(request):
-    return HttpResponse("sudoku")
+    return render(request, "sudoku/sudoku.html")
+
 
 def stuck(request):
     return HttpResponse("stuck")
