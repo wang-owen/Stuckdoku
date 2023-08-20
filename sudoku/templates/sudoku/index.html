@@ -18,9 +18,11 @@
             <p>New</p>
           </div>
           <div style="padding:5px">
-              <a href="{% url 'sudoku' %}"
-              ><img src="{% static 'assets/stuck.png' %}"
-            /></a>
+              <label for ="photoInput" style="cursor:pointer;">
+                <img id="photoPreview" src="{% static 'assets/stuck.png' %}" alt="Selected Photo;">
+              </label>
+              <input type="file" accept="image/*" capture="camera" id="photoInput" style="display:none;">
+              <script scr="script.js"></script>
             <p>Upload</p>
           </div>
         </div>
@@ -28,9 +30,11 @@
       <div class="container">
         <div class="button">
           <h2>Stuck</h2>
-          <a href="{% url 'stuck' %}"
-            ><img src="{% static 'assets/stuck.png' %}"
-          /></a>
+          <label for ="photoInput" style="cursor:pointer;">
+            <img id="photoPreview" src="{% static 'assets/stuck.png' %}" alt="Selected Photo;">
+          </label>
+          <input type="file" accept="image/*" capture="camera" id="photoInput" style="display:none;">
+          <script scr="script.js"></script>
           <p>Upload</p>
         </div>
       </div>
