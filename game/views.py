@@ -1,9 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from django import forms
 from . import util
 from sudoku import Sudoku
-import random
 
 # Create your views here.
 
@@ -21,7 +19,6 @@ def sudoku(request):
                 puzzle[row][val] = 0
 
     request.session["board"] = puzzle
-    print(request.session["board"])
     return render(
         request,
         "game/sudoku.html",
