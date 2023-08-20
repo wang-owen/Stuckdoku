@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'sudoku/sudoku.css' %}" />
+    <link rel="stylesheet" href="{% static 'game/sudoku.css' %}" />
     <script>
       const Board = {{ board|safe }};
       window.onload = () => {
@@ -72,5 +72,14 @@
     <div id="sudoku_board"></div>
     <br />
     <div id="digits"></div>
+
+    <form action="{% url 'solve' %}">
+      <input type="submit" value="Solve" />
+    </form>
+
+    <form action="{% url 'sudoku' %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="New" />
+    </form>
   </body>
 </html>
