@@ -4,8 +4,8 @@ import pytesseract
 
 import os
 
-script_directory = os.path.dirname(os.path.abspath(__file__))
-image_path = os.path.join(script_directory, 'example.jpg')
+image_filename= 'example.jpg'
+image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'assets', image_filename)
 
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
