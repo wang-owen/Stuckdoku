@@ -34,6 +34,16 @@ for contour in contours:
         col_index = x // cell_width
         sudoku_grid[row_index][col_index] = value
 
-# Print the Sudoku grid
-for row in sudoku_grid:
-    print(" ".join(str(cell) if cell != 0 else '.' for cell in row))
+#sudoku puzzle array for the example -- show this one on the webpage!!
+sudoku_grid2=[[0 for _ in range(9)] for _ in range(9)]
+sudoku_grid2=[
+    [2,9,0,0,0,3,0,0,6],
+    [0,5,6,2,0,9,3,0,0],
+    [0,0,7,0,6,5,0,0,2],
+    [5,7,0,0,0,2,4,0,0],
+    [0,2,3,0,1,0,7,5,0],
+    [8,0,9,5,0,0,2,3,0],
+    [0,4,0,0,0,1,0,7,3],
+    [6,1,0,0,0,4,0,2,5],
+    [0,3,5,0,0,0,8,1,4]
+]
