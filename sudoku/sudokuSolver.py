@@ -1,3 +1,5 @@
+import json
+
 sudokuLength = 9
 row_num = 3
 col_num = 3
@@ -47,7 +49,7 @@ def iscorrect(board, row, col, num):
 
 
 def return_board(board):
-    return board
+    return json.dumps(board)
 
 
 sudoku_board = []
