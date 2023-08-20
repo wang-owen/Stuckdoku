@@ -76,10 +76,5 @@
     <form action="{% url 'solve' %}">
       <input type="submit" value="Solve" />
     </form>
-
-    <form action="{% url 'sudoku' %}" method="POST">
-      {% csrf_token %}
-      <input type="submit" value="New" />
-    </form>
   </body>
 </html>
